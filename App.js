@@ -1,11 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+{/*//* Una especie de div con flexbox*/}
+<Text>
+{/*//* El único componente que renderiza texto    */}
+  HOLA LORENITA!
+</Text>
+<TextInput>
+{/* //* Input de HTML   */}
+Nombre
+</TextInput>
+<TouchableOpacity >
+{/*  //* Todos los touchable son como botones  */}
+{/* //* Se usan con OnPress no OnClick, y para que muestren texto deben llevar un <Text> */}
+<Text>
+Soy un botón
+</Text>
+</TouchableOpacity>
     </View>
   );
 }
